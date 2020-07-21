@@ -1,0 +1,641 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    overflow: hidden;
+}
+.buttons-Login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82px;
+    background-color: #4267b2; /*#4267b2*/ /*#3b5998*/
+    z-index: 9999999;
+}
+.heading
+{
+    position: relative;
+    transform: translate(20vw, 2vh);
+    max-width: 20vw;
+    max-height: 100%;
+}
+.heading h1
+{
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: Helvetica;
+    cursor: pointer;
+}
+.heading a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    filter: brightness(110%);
+}
+.LogIn{
+    position: relative;
+    float: right;
+    max-width: 50vw;
+    max-height: 100%;
+    transform: translate(-20vw, 0);
+}
+.LogIn input
+{
+    padding: 10px;
+    padding-left: 5px;
+    transform: translate(0, -2.2vh);
+    height: 25px;
+    width: 142px;
+    outline: none;
+    border: 1px solid black;
+}
+.LogIn label
+{
+    color: white;
+    font-size: 13px;
+    font-weight: 100;
+}
+.LogIn #emm-L
+{
+    position: absolute;
+    top: -170%;
+    left: 0;
+}
+.LogIn #pas-L
+{
+    position: absolute;
+    top: -170%;
+    left: 48%;
+}
+.LogIn input[type="password"]{
+    transform: translate(1vw, -2.2vh);
+}
+.LogIn button{
+    background-color: royalblue;
+    border: 1px solid #29487d;
+    cursor: pointer;
+    font-size: 13px;
+    color: white;
+    transform: translate(2vw, -2.2vh);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+    width: 50px;
+    filter: brightness(90%);
+    height: 25px;
+}
+.LogIn button:hover
+{
+    background-color: #4267b2;
+    filter: brightness(100%);
+}
+.LogIn a {
+    font-size: 14px;
+    color: #9cb4d8;
+    font-weight: normal;
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    text-decoration: none;
+}
+.LogIn a:hover
+{
+    text-decoration: underline;
+}
+.Main-Create-Acc{
+    position: absolute;
+    top: 95%;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    z-index: -111111111111;
+    background-color: #dedede;
+}
+.Add-Account{
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    max-width: 30vw;
+    max-height: 50vh;
+}
+.Add-Account h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #2d2e2e;
+}
+.Add-Account p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+}
+.Adding
+{
+    position: relative;
+    width: 160px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    transform: translate(5vw, 0);
+}
+.Adding:hover{
+    box-shadow: 1px 1px 6px -4px #000;
+}
+.Adding .Plus
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -11;
+    background-color: #edf1f7;
+}
+.Plus a {
+    background-color: #4267b2;
+    clip-path: circle();
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.Plus a i {
+    color: white;
+    font-weight: bold;
+}
+.Adding .Adding-text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    z-index: 9999;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Adding-text a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+    color: #385898;
+}
+.Create {
+    position: absolute;
+    top: 0%;
+    left: 65%;
+    width: 30vw;
+    height: 10vh;
+    text-align: left;
+}
+.Create h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #2d2e2e;
+}
+.Create p {
+    font-size: 20px;
+    font-weight: normal;
+    color: #333;
+}
+.SignIn {
+    position: absolute;
+    top: 18%;
+    left: 65%;
+    width: 50%;
+    height: 50%;
+}
+.SignIn input[type="text"]{
+    border: transparent;
+    border-radius: 5px;
+    outline: none;
+    width: 230px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+}
+.SignIn input[type="text"]#Sec {
+    width: 200px;
+    transform: translate(1vw, 0);
+}
+.SignIn input[type="email"]{
+    border: transparent;
+    border-radius: 5px;
+    outline: none;
+    width: 450px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+}
+.SignIn input[type="password"]{
+    border: transparent;
+    border-radius: 5px;
+    outline: none;
+    width: 450px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+}
+.SignIn p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #90949c;
+    padding: 10px;
+}
+.SignIn select
+{
+    padding-bottom: 5px;
+    height: 30px;
+    font-size: 13px;
+    border:1px solid #90949c;
+    outline: none;
+}
+.SignIn #day{
+    transform: translate(0.2vw, 0);
+    width: 50px;
+}
+.SignIn #month{
+    width: 80px;
+}
+.SignIn #year {
+    transform: translate(-0.2vw, 0);
+}
+.SignIn input[type="radio"]{
+    
+    margin: 10px auto;
+}
+.SignIn label
+{
+    font-size: 19px;
+}
+.SignIn .female {
+    width: 130px;
+    padding: 10px;
+}
+.SignIn .male {
+    padding: 10px;
+}
+.SignIn .custom {
+    padding: 10px;
+}
+.SignIn .click {
+    max-width: 17vw;
+    font-size: 11px;
+    font-weight: lighter;
+}
+.click a {
+    font-size: 11px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #385898;
+    cursor: pointer;
+}
+.click a:hover {
+    text-decoration: underline;
+}
+.Sign
+{
+    transform: translate(0.5vw, -0.4vh);
+    background: linear-gradient(#67ae55, #578843);
+    padding: 7px 20px;
+    font-size: 19px;
+    color: #fff;
+    min-width: 194px;
+    border: transparent;
+    font-weight: 500;
+    font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Sign:hover{
+    filter: brightness(105%);
+}
+.SignIn hr {
+    width: 450px;
+    opacity: 0.4;
+    transform: translate(0.5vw, -0.4vh);
+}
+.SignIn .Final {
+    font-size: 13px;
+}
+.SignIn .Final a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #385898;
+}
+.Final a:hover {
+    text-decoration: underline;
+}
+.SignIn a.quest {
+    transform: translate(0.5vw, -3vh);
+    color: #cccbca;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 6px;
+    clip-path: circle();
+    background-color: #403f3e;
+    font-weight: bold;
+}
+footer {
+    display: inline-block;
+    z-index: 99999999;
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    background-color: #fff;
+}
+footer a {
+    display: inline;
+    font-size: 16px;
+    text-decoration: none;
+    color: #385898;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer hr {
+    width: 980px;
+    opacity: 0.4;
+}
+footer .First {
+    
+    width: 1000px;
+    max-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 20.5%;
+}
+.First ul {
+    max-width: 100%;
+    max-height: 100%;
+}
+.First ul li {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+}
+.First ul li p {
+    font-size: 15px;
+    color: #90949c;
+}
+.First ul li a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #385898;
+}
+.First ul li a:hover {
+    text-decoration: underline;
+}
+.First ul li .finn {
+    padding: 3px 13px;
+    background-color: #f5f6f7;
+    border-color: #ccd0d5;
+    color: #4b4f56;
+}
+.Second
+{
+    width: 1000px;
+    max-height: 60px;
+    position: absolute;
+    top: 18%;
+    left: 20%;
+}
+.Second ul li {
+    display: inline-block;
+    padding-top: 3px;
+
+    padding-left: 16px;
+    
+}
+
+.Second ul li a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #385898;
+    line-height: 1.6;
+}
+.Second ul li a:hover {
+    text-decoration: underline;
+}
+.Copyright {
+    width: 1000px;
+    max-height: 60px;
+    position: absolute;
+    bottom: 35%;
+    left: 21%;
+}
+.Copyright p {
+    font-size: 13px;
+    color: #90949c;
+}
+.Orr {
+    display: none;
+}
+.LogIn hr {
+    display: none;
+}
+.LogIn .Hidden {
+    display: none;
+}
+.LogIn a:nth-child(1) {
+  display: none;
+}
+.LogIn a:nth-child(3){
+   display: none;
+}
+
+@media screen and (max-width: 550px)
+{
+    
+    body {overflow-y: hidden; max-height: 60vh;}
+    .LogIn { position: relative; transform: translate(-5vw, 30vh); }
+    .LogIn input[type="email"] {
+        border: 1px solid #90949c;
+        transform: translate(-33vw, -5vh);
+        width: 75vw;
+        height: 35px;
+    }
+    .LogIn input[type="password"]{
+        border: 1px #90949c solid;
+        transform: translate(-33vw, -4.95vh);
+        width: 75vw;
+        height: 35px;   
+    }
+    .LogIn button {
+        font-style: italic;
+        transform: translate(-33vw, -4vh);
+        width: 75vw;
+        height: 30px;
+        font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+        font-weight: bold;
+    }
+    .LogIn a {
+        display: none;
+    }
+    .LogIn #forgot {
+        display: block;
+        transform: translate(-50vw, 22vh);
+        width: 100vw;
+    }
+    .LogIn #helping {
+        display: block;
+        transform: translate(-10vw, 22vh);
+        
+    }
+    .LogIn .Orr {
+        display: block;
+        font-size: 16px;
+        color: #90949c;
+        transform: translate(1vw, 0);
+    }
+    .Orr::before{
+        content: '';
+        position: absolute;
+        bottom: 30%;
+        left: -75%;
+        border: 1px solid #90949c;
+        width: 35vw;
+    }
+    .Orr::after{
+        content: '';
+        position: absolute;
+        bottom: 30%;
+        left: 15%;
+        border: 1px solid #90949c;
+        width: 35vw;
+    }
+    .LogIn .Hidden {
+        display: block;
+        transform: translate(-29vw, 1.5vh);
+        /*background: linear-gradient(#67ae55, #578843);*/
+        background-color: #67ae55;
+        padding: 7px 20px;
+        height: 50px;
+        font-size: 20px;
+        color: #fff;
+        filter: brightness(110%);
+        font-style: italic;
+        width: 66vw;
+        border: transparent;
+        font-weight: bold;
+        font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .LogIn hr {
+        display: none;
+        width: 85vw;
+        opacity: 0.6;
+        transform: translate(-36vw, 0);
+    }
+    .Main-Create-Acc {display: none;}
+    footer {position: absolute; bottom: -10%; left: -9%; max-width: 20vw; display: none;}
+    footer ul li {max-width: 15vw; max-height: 60vh;}
+    footer .Second {display: none;}
+    footer hr { display: none; }
+}
+@media screen and (max-width: 361px){
+    .LogIn .Hidden { width: 70vw; }
+}
+@media screen and (max-width: 371px){
+    .Hidden { width: 70vw; }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1024px)
+{
+    .buttons-Login { width: 100%; }
+    body {overflow-y: hidden; max-height: 60vh;}
+    .LogIn { position: relative; transform: translate(-5vw, 30vh); }
+    .LogIn input[type="email"] {
+        border: 1px solid #90949c;
+        transform: translate(-22vw, -5vh);
+        width: 55vw;
+        height: 35px;
+    }
+    .LogIn input[type="password"]{
+        border: 1px #90949c solid;
+        transform: translate(-22vw, -4.95vh);
+        width: 55vw;
+        height: 35px;   
+    }
+    .LogIn button {
+        font-style: italic;
+        transform: translate(-22vw, -4vh);
+        width: 55vw;
+        height: 30px;
+        font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+        font-weight: bold;
+    }
+    .LogIn a {
+        display: none;
+    }
+    .LogIn #forgot {
+        display: block;
+        transform: translate(-40vw, 19vh);
+        width: 100vw;
+    }
+    .LogIn #helping {
+        display: block;
+        transform: translate(-10vw, 19vh);
+        
+    }
+    .LogIn .Orr {
+        display: block;
+        font-size: 16px;
+        color: #90949c;
+        transform: translate(5vw, 0);
+    }
+    .Orr::before{
+        content: '';
+        position: absolute;
+        bottom: 30%;
+        left: -52%;
+        border: 1px solid #90949c;
+        width: 25vw;
+    }
+    .Orr::after{
+        content: '';
+        position: absolute;
+        bottom: 30%;
+        left: 8%;
+        border: 1px solid #90949c;
+        width: 25vw;
+    }
+    .LogIn .Hidden {
+        display: block;
+        transform: translate(-15vw, 1.5vh);
+        background: linear-gradient(#67ae55, #578843);
+        background-color: #67ae55;
+        padding: 7px 20px;
+        height: 50px;
+        font-size: 18px;
+        color: #fff;
+        filter: brightness(110%);
+        font-style: italic;
+        width: 43vw;
+        border: transparent;
+        font-weight: bold;
+        font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .LogIn hr {
+        display: none;
+        width: 85vw;
+        opacity: 0.6;
+        transform: translate(-36vw, 0);
+    }
+    .Main-Create-Acc {display: none;}
+    footer {position: absolute; bottom: -10%; left: -9%; max-width: 20vw; display: none;}
+    footer ul li {max-width: 15vw; max-height: 60vh;}
+    footer .Second {display: none;}
+    footer hr { display: none; }
+}
